@@ -7,17 +7,19 @@ import models.Book;
 
 public class GenerateData {
 	public int[] generateIntArray() {
-		int size=RandomUtil.randomNumber(5, 10);
+		//int size=RandomUtil.randomNumber(5, 10);
+		int size=10000;//lấy số phần tử là 10000 để test hiệu năng
 		int[] result= new int[size];
 		for(int i=0; i<size; i++) {
-			result[i]=RandomUtil.randomNumber(0, 100);
+			result[i]=RandomUtil.randomNumber(0, 10000);
 		}
 		
 		return result;
 	}
 
 	public String[] generateStringArray() {
-		int size=RandomUtil.randomNumber(5, 10);
+		//int size=RandomUtil.randomNumber(5, 10);
+		int size=10000;//lấy số phần tử là 10000 để test hiệu năng
 		String[] result= new String[size];
 		for(int i=0; i<size; i++) {
 			result[i]=RandomUtil.randomString();
@@ -27,17 +29,19 @@ public class GenerateData {
 	}
 	
 	public List<Integer> generateIntList() {
-		int size=RandomUtil.randomNumber(5, 10);
+		//int size=RandomUtil.randomNumber(5, 10);
+		int size=10000;//lấy số phần tử là 10000 để test hiệu năng
 		List<Integer> result= new ArrayList<>();
 		for(int i=0; i<size; i++) {
-			result.add(RandomUtil.randomNumber(0, 100));
+			result.add(RandomUtil.randomNumber(0, 10000));
 		}
 		
 		return result;
 	}
 	
 	public List<String> generateStringList(){
-		int size=RandomUtil.randomNumber(5, 10);
+		//int size=RandomUtil.randomNumber(5, 10);
+		int size=10000;//lấy số phần tử là 10000 để test hiệu năng
 		List<String> result= new ArrayList<>();
 		for(int i=0; i<size; i++) {
 			result.add(RandomUtil.randomString());
@@ -58,7 +62,8 @@ public class GenerateData {
 	}
 	
 	public Book[] generateBookArray() {
-		int size=RandomUtil.randomNumber(5, 10);
+		//int size=RandomUtil.randomNumber(5, 10);
+		int size=10000;//lấy số phần tử là 10000 để test hiệu năng
 		Book[] result= new Book[size];
 		for(int i=0; i<size; i++) {
 			result[i]=generateBook();
@@ -69,7 +74,8 @@ public class GenerateData {
 	}
 	
 	public List<Object> generateBookList() {
-		int size=RandomUtil.randomNumber(5, 10);
+		//int size=RandomUtil.randomNumber(5, 10);
+		int size=10000;//lấy số phần tử là 10000 để test hiệu năng
 		List<Object> result= new ArrayList<>();
 		for(int i=0; i<size; i++) {
 			result.add(generateBook());

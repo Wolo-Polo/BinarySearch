@@ -2,7 +2,7 @@ package utils;
 
 public class RandomUtil {
 	public static int randomNumber(int min, int max) {
-		return (int)(Math.random()*(max-min)) +min; //random trong khoang 0-100
+		return (int)(Math.random()*(max-min)) +min; //random trong khoang min - max
 	}
 
 	public static String randomString() {
@@ -18,7 +18,7 @@ public class RandomUtil {
 	
 	public static void main(String[] args) {
 		for(int i=0; i<50; i++) {
-			System.out.println("num: " + randomNumber(0, 100) + " string: " + randomString());
+			System.out.println("num: " + randomNumber(0, 10000) + " string: " + randomString());
 		}
 		//System.out.println(randomNumber(0, 50));
 	}
